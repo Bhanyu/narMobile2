@@ -1,10 +1,12 @@
 
 
 import React from "react";
+import Swiper from "./Swiper";
 const Home = ()=>{
     return(
         <div>
-          Salam
+         SA;LAMMM
+         <Swiper/>
         </div>
     )
 }
