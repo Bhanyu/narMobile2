@@ -54,7 +54,7 @@ const Header = ()=>{
             <div className={styles.pagesLink}>
                 <ul>
                     <li><a href="/definitions">Tariflər</a></li>
-                    <li><a href="#">İnternet</a></li>
+                    <li><a href="/internet">İnternet</a></li>
                     <li><a href="#">Xidmətlər</a></li>
                     <li><a href="#">Kampaniyalar</a></li>
                     <li><a href="#">Tədbiqlər</a></li>
