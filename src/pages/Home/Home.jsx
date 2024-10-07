@@ -1,12 +1,13 @@
 
 
 import React from "react";
-import Swiper from "./Swiper";
+import SwiperFunc from "./SwiperFunc";
+
 const Home = ()=>{
     return(
         <div>
          SA;LAMMM
-         <Swiper/>
+         <SwiperFunc/>
         </div>
     )
 }
