@@ -3,16 +3,29 @@
 
 
 #mainHead{
-    background-color: red;
+
     max-width: 100%;
     font-family: "Roboto", sans-serif;
+    @media (max-width:1024px) {
+       position: relative;
+    }
     .updownhead{
        
        max-width: 100%;
+       @media (max-width:1024px) {
+        display: flex;
+        width: 100%;
+  
+
+        
+    }
         .upHead{
             background-color: #ffffff;
             max-width: 100%;
             height: 70px;
+            @media (min-width:1025px) {
+                padding: 0 10px;
+            }
             @media (max-width:1024px) {
                 display: none;
             }
@@ -125,12 +138,21 @@
         }
         .downHead{
             background-color: #D43157;
+            @media (min-width:1025px) {
+                padding: 0 10px;
+            }
+            @media (max-width:1024px) {
+                width: 100%;
+             }
             .container{
                 max-width: 1300px;
                 display: flex;
                 margin: 0 auto;
                 align-items: center;
                 justify-content: space-between;
+                @media (max-width:1024px) {
+                 width: 100%;
+                 }
          
               
                 .navigation{
@@ -139,12 +161,18 @@
                      
                         max-width: 9%;
                         display: flex;
+                        @media (max-width:1024px) {
+                          max-width: 30%;
+                        }
                         img{
                             max-width: 100%;
                         }
                     }
                     .pagesLink{
                         display: flex;
+                        @media (max-width:1024px) {
+                            display: none;
+                        }
                         ul{
                             display: flex;
                         
@@ -193,14 +221,17 @@
                     }
                 }
                 .more{
-               
+               @media (max-width:1024px) {
+                display: none;
+            }
                     button{
                         border: 1px solid #D43157;
                         .moreIcon{
                             font-size: 20px;
                             margin-right: 5px;
                         }
-                        padding: 10px 15px;
+                        padding: 10px 8px;
+                        width: 120px;
                         border-radius: 50px;
                         font-size: 16px;
                     color: #D43157;

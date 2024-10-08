@@ -19,6 +19,10 @@
                 flex-direction: column;
                 padding: 20px;
              }
+           
+            @media (min-width:769px) and (max-width:992px) {
+                background-color: red;
+            }
              .slideDesc{
               
                 width: 40%;
@@ -26,25 +30,51 @@
                 @media (max-width:768px) {
                    width: 100%;
                  }
+              
+                @media (min-width:769px) and (max-width:992px) {
+                    max-width: 50%;
+                    background-color: blue;
+                    margin-left: 3%;
+                }
+                @media (min-width:993px) and (max-width:1280px) {
+               
+                    margin-left: 3%;
+                }
                 h2{
                     font-size: 48px;
                     @media (max-width:768px) {
-                    font-size: 38px;
+                    font-size: 35px;
                       }
+                      @media (min-width:769px) and (max-width:992px) {
+                     font-size: 30px;
+                    }
                  
                 }
                 h4{
                     font-size: 20px;
                     margin: 32px 0;
+                    @media (max-width:768px) {
+                      margin: 16px 0;
+                       
+                      }
                 }
              }
              .slideImage{
                 width: 30%;
            
                 @media (max-width:768px) {
-                    width: 100%;
-                    margin-top: 30px;
+                    width: 80%;
+                    margin-top: 10px;
+                   
                   }
+                  @media (min-width:769px) and (max-width:992px) {
+                    width: 45%;
+               
+                }
+                @media (min-width:993px) and (max-width:1280px) {
+               
+                    width: 35%;
+                }
                 img{
                     width: 100%;
                 }
@@ -61,6 +91,12 @@
                top: 92%;
                left: 5%;
               
+             }
+             @media (min-width:769px) and (max-width:992px) {
+               top: 85%;
+            }
+            @media (min-width:993px) and (max-width:1024px) {
+                top: 90%;
              }
             button{
                 background-color: transparent;
