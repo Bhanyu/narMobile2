@@ -1,18 +1,24 @@
-import React from "react";
-import styles from "../Header/header.module.scss"
+import React, { useState } from "react"
+import { IoMenuSharp } from "react-icons/io5";
 import { MdOutlineQuestionMark } from "react-icons/md";
 import { IoSunnyOutline } from "react-icons/io5";
 import { CiDark } from "react-icons/ci";
 import { FaUser } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import { CiSquareMore } from "react-icons/ci";
-import { IoMenuSharp } from "react-icons/io5";
-import BurgerMenu from "./BurgerMenu";
-const Header = ()=>{
+import styles from "../Header/burgerMenu.module.scss"
+const BurgerMenu = ()=>{
+    const [isOpen, setIsOpen] = useState(false)
+    const toggleMenu = ()=>{
+        setIsOpen(!isOpen)
+    }
     return(
-        <header id={styles.mainHead}>
-   <div className={styles.updownhead}>
-   <div className={styles.upHead}>
+        <div className={styles.burgerMenu}>
+       <div className={`${styles.burgerMenuBtn} ${isOpen ? styles.open : ""}`} onClick={toggleMenu}>
+       <IoMenuSharp />
+       </div>
+       <div className={`${styles.menuContent} ${isOpen ? styles.show : ""}`}>
+       <div className={styles.upHead}>
     <div className={styles.container}>
         <div className={styles.leftpart}>
             <ul>
@@ -82,10 +88,9 @@ const Header = ()=>{
         </div>
     </div>
    </div>
-   <BurgerMenu/>
-   </div>
-  
-        </header>
+       </div>
+       </div>
+       
     )
 }
-export default Header;
+export default BurgerMenu

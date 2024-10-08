@@ -2,7 +2,79 @@
     background-color: red;
     max-width: 100%;
     .swiperContainer{
-        background-color: blue;
+        background-color: #D43157;
         max-width: 100%;
+   
+    
+        .swiperslide{
+            background-color: transparent;
+             height: 500px;
+             display: flex;
+             max-width: 1400px;
+             margin: 0 auto;
+             justify-content: space-between;
+             align-items: center;
+             position: relative;
+             @media (max-width:768px) {
+                flex-direction: column;
+                padding: 20px;
+             }
+             .slideDesc{
+              
+                width: 40%;
+                color: white;
+                @media (max-width:768px) {
+                   width: 100%;
+                 }
+                h2{
+                    font-size: 48px;
+                    @media (max-width:768px) {
+                    font-size: 38px;
+                      }
+                 
+                }
+                h4{
+                    font-size: 20px;
+                    margin: 32px 0;
+                }
+             }
+             .slideImage{
+                width: 30%;
+           
+                @media (max-width:768px) {
+                    width: 100%;
+                    margin-top: 30px;
+                  }
+                img{
+                    width: 100%;
+                }
+             }
+
+        }
+        .swiperPag{
+      
+            position: absolute;
+            top: 75%;
+            left: 8%;
+            z-index: 1;
+            @media (max-width:768px) {
+               top: 92%;
+               left: 5%;
+              
+             }
+            button{
+                background-color: transparent;
+                border: none;
+                border: 2px solid  rgb(169, 169, 169);
+          
+                padding:13px 15px;
+                border-radius: 30px;
+                margin: 0 5px;
+                @media (max-width:768px) {
+               background-color: #D43157;
+               color: aliceblue;
+                 }
+            }
+        }
     }
 }
